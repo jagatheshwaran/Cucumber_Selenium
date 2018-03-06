@@ -15,11 +15,17 @@ import com.jaga.cucumber.framework.configurationreader.PropertyFileReader;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 5/3/2018
+ *
+ */
 public class TestBase {
 
 	public static WebDriver driver;
 
+	// Created by Jagatheshwaran on 5/3/2018
 	public WebDriver getBrowserObject(BrowserType browsertype) throws Exception {
 		try {
 
@@ -46,6 +52,7 @@ public class TestBase {
 		}
 	}
 
+	// Created by Jagatheshwaran on 5/3/2018
 	public void setupDriver(BrowserType browsertype) throws Exception {
 		// ObjectReader.reader = new PropertyFileReader();
 		driver = getBrowserObject(browsertype);
@@ -55,6 +62,7 @@ public class TestBase {
 
 	}
 
+	// Created by Jagatheshwaran on 5/3/2018
 	@Before
 	public void before() throws Exception {
 		ObjectReader.reader = new PropertyFileReader();
@@ -62,6 +70,7 @@ public class TestBase {
 
 	}
 
+	// Created by Jagatheshwaran on 5/3/2018
 	@After
 	public void after(Scenario scenario) {
 		driver.quit();
