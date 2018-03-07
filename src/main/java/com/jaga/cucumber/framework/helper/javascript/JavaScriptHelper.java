@@ -82,4 +82,10 @@ public class JavaScriptHelper {
 	public void ScrolDownByPixel() {
 		executeScript("window.scrollBy(0,1500)");
 	}
+	
+	// Created by Jagatheshwaran on 7/3/2018
+	public void zoomInByPercentage()
+	{
+		executeScript("document.body.style.zoom='50'");
+	}
 }
