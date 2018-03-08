@@ -3,6 +3,7 @@ package com.jaga.cucumber.framework.helper.testbase;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.jaga.cucumber.framework.browser.BrowserType;
@@ -74,5 +75,10 @@ public class TestBase {
 	@After
 	public void after(Scenario scenario) {
 		driver.quit();
+	}
+
+	public String getElement(By locator) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
