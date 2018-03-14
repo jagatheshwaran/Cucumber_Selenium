@@ -4,27 +4,31 @@
 Feature: Create Account and Register into the GCR application
 
 @tag1
-Scenario: Verify customer able to create new account and register into the GCR application
+Scenario Outline: Verify customer able to create new account and register into the GCR application
 
 
 Given customer is on GCR Login Page
 When customer click on New Customer Continue button
-When customer clicks Gender as "Male"
-And customer enters FirstName as "jaga"
-And customer enters LastName as "waran"
-And customer enters BirthDate as "03/03/2018"
-And customer enters EmailAddress as "testjaga1332018@gmail.com"
-And customer enters Company Name as "Softwre Company"
-And customer enters Address as "Sholinganallur"
-And customer enters Postalcode as "600119"
-And customer enters City as "Chennai"
-And customer enters State as "TamilNadu"
-And customer selects Country as "India"
-And customer enters Telephone Number as "9876543210"
-And customer enters Password as "jaga@12345"
-And customer enters Confirm Passowrd as "jaga@12345"
+When customer clicks Gender as "<Gender>"
+And customer enters FirstName as "<FName>"
+And customer enters LastName as "<LName>"
+And customer enters BirthDate as "<BirthDate>"
+And customer enters EmailAddress as "<Email>"
+And customer enters Company Name as "<Company>"
+And customer enters Address as "<Address>"
+And customer enters Postalcode as "<Postcode>"
+And customer enters City as "<City>"
+And customer enters State as "<State>"
+And customer selects Country as "<Country>"
+And customer enters Telephone Number as "<Phone>"
+And customer enters Password as "<Password>"
+And customer enters Confirm Passowrd as "<ConfirmPassword>"
 And customer clicks on Submit button
 Then Account Creation is Successful 
 	
 
-
+Examples: 
+ 
+|Gender|FName|LName|BirthDate|Email|Company|Address|Postcode|City|State|Country|Phone|Password|ConfirmPassword|
+|Male|Jaga|Waran|03/03/2018|jaga14032018@gmail.com|Software Company|Sholinganallur|600119|Chennai|TamilNadu|India|9876543210|jaga@12345|jaga@12345|
+      

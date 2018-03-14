@@ -1,293 +1,168 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/gcrApplication/AccountRegistrationPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/gcrApplication/SingInPage.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Create Account and Register into the GCR application",
+  "line": 4,
+  "name": "Sign in to the GCR application",
   "description": "",
-  "id": "create-account-and-register-into-the-gcr-application",
+  "id": "sign-in-to-the-gcr-application",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
+      "name": "@jagatheshwaran"
+    },
+    {
+      "line": 2,
+      "name": "@12/03/2018"
+    },
+    {
+      "line": 3,
       "name": "@tag"
     }
   ]
 });
-formatter.before({
-  "duration": 11532477053,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "Verify customer able to create new account and register into the GCR application",
+formatter.scenarioOutline({
+  "line": 7,
+  "name": "Verify customer able to Sign in to the GCR application",
   "description": "",
-  "id": "create-account-and-register-into-the-gcr-application;verify-customer-able-to-create-new-account-and-register-into-the-gcr-application",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "sign-in-to-the-gcr-application;verify-customer-able-to-sign-in-to-the-gcr-application",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
+      "line": 6,
       "name": "@tag1"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "customer is on GCR Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "customer click on New Customer Continue button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "customer clicks Gender as \"Male\"",
-  "keyword": "When "
-});
-formatter.step({
   "line": 11,
-  "name": "customer enters FirstName as \"jaga\"",
-  "keyword": "And "
+  "name": "customer enters email address as \"\u003cEmail\u003e\"",
+  "keyword": "When "
 });
 formatter.step({
   "line": 12,
-  "name": "customer enters LastName as \"waran\"",
+  "name": "customer enters password as \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "customer enters BirthDate as \"03/03/2018\"",
+  "name": "customer clicks on sign in button",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "customer enters EmailAddress as \"testjaga1332018@gmail.com\"",
-  "keyword": "And "
+  "name": "sign in to the GCR Application is successful",
+  "keyword": "Then "
 });
-formatter.step({
-  "line": 15,
-  "name": "customer enters Company Name as \"Softwre Company\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "customer enters Address as \"Sholinganallur\"",
-  "keyword": "And "
-});
-formatter.step({
+formatter.examples({
   "line": 17,
-  "name": "customer enters Postalcode as \"600119\"",
-  "keyword": "And "
+  "name": "",
+  "description": "",
+  "id": "sign-in-to-the-gcr-application;verify-customer-able-to-sign-in-to-the-gcr-application;",
+  "rows": [
+    {
+      "cells": [
+        "Email",
+        "Password"
+      ],
+      "line": 19,
+      "id": "sign-in-to-the-gcr-application;verify-customer-able-to-sign-in-to-the-gcr-application;;1"
+    },
+    {
+      "cells": [
+        "jaga14032018@gmail.com",
+        "jaga@12345"
+      ],
+      "line": 20,
+      "id": "sign-in-to-the-gcr-application;verify-customer-able-to-sign-in-to-the-gcr-application;;2"
+    }
+  ],
+  "keyword": "Examples"
 });
-formatter.step({
-  "line": 18,
-  "name": "customer enters City as \"Chennai\"",
-  "keyword": "And "
+formatter.before({
+  "duration": 5359602998,
+  "status": "passed"
 });
-formatter.step({
-  "line": 19,
-  "name": "customer enters State as \"TamilNadu\"",
-  "keyword": "And "
-});
-formatter.step({
+formatter.scenario({
   "line": 20,
-  "name": "customer selects Country as \"India\"",
+  "name": "Verify customer able to Sign in to the GCR application",
+  "description": "",
+  "id": "sign-in-to-the-gcr-application;verify-customer-able-to-sign-in-to-the-gcr-application;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@jagatheshwaran"
+    },
+    {
+      "line": 2,
+      "name": "@12/03/2018"
+    },
+    {
+      "line": 3,
+      "name": "@tag"
+    },
+    {
+      "line": 6,
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "customer is on GCR Login Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 11,
+  "name": "customer enters email address as \"jaga14032018@gmail.com\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "customer enters password as \"jaga@12345\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
-  "name": "customer enters Telephone Number as \"9876543210\"",
+  "line": 13,
+  "name": "customer clicks on sign in button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
-  "name": "customer enters Password as \"jaga@12345\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "customer enters Confirm Passowrd as \"jaga@12345\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "customer clicks on Submit button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "Account Creation is Successful",
+  "line": 14,
+  "name": "sign in to the GCR Application is successful",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AccountCreationPageDefinition.customer_is_on_GCR_Login_Page()"
+  "location": "SignInPageDefinition.customer_is_on_GCR_Login_Page()"
 });
 formatter.result({
-  "duration": 14865700586,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AccountCreationPageDefinition.customer_click_on_New_Customer_Continue_button()"
-});
-formatter.result({
-  "duration": 2606055704,
+  "duration": 7028762981,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Male",
-      "offset": 27
+      "val": "jaga14032018@gmail.com",
+      "offset": 34
     }
   ],
-  "location": "AccountCreationPageDefinition.customer_clicks_Gender_as(String)"
+  "location": "SignInPageDefinition.customer_enters_email_address_as(String)"
 });
 formatter.result({
-  "duration": 104941165,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "jaga",
-      "offset": 30
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_FirstName_as(String)"
-});
-formatter.result({
-  "duration": 170007678,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "waran",
-      "offset": 29
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_LastName_as(String)"
-});
-formatter.result({
-  "duration": 135147842,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "03/03/2018",
-      "offset": 30
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_BirthDate_as(String)"
-});
-formatter.result({
-  "duration": 426208509,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testjaga1332018@gmail.com",
-      "offset": 33
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_EmailAddress_as(String)"
-});
-formatter.result({
-  "duration": 486861339,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Softwre Company",
-      "offset": 33
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_Company_Name_as(String)"
-});
-formatter.result({
-  "duration": 274958129,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Sholinganallur",
-      "offset": 28
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_Address_as(String)"
-});
-formatter.result({
-  "duration": 230614079,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "600119",
-      "offset": 31
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_Postalcode_as(String)"
-});
-formatter.result({
-  "duration": 151171207,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Chennai",
-      "offset": 25
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_City_as(String)"
-});
-formatter.result({
-  "duration": 194274870,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "TamilNadu",
-      "offset": 26
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_State_as(String)"
-});
-formatter.result({
-  "duration": 181736120,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "India",
-      "offset": 29
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_selects_Country_as(String)"
-});
-formatter.result({
-  "duration": 331083403,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "9876543210",
-      "offset": 37
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_Telephone_Number_as(String)"
-});
-formatter.result({
-  "duration": 211777608,
+  "duration": 336713524,
   "status": "passed"
 });
 formatter.match({
@@ -297,41 +172,28 @@ formatter.match({
       "offset": 29
     }
   ],
-  "location": "AccountCreationPageDefinition.customer_enters_Password_as(String)"
+  "location": "SignInPageDefinition.customer_enters_password_as(String)"
 });
 formatter.result({
-  "duration": 233403726,
+  "duration": 184388435,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "jaga@12345",
-      "offset": 37
-    }
-  ],
-  "location": "AccountCreationPageDefinition.customer_enters_Confirm_Passowrd_as(String)"
+  "location": "SignInPageDefinition.customer_clicks_on_sign_in_button()"
 });
 formatter.result({
-  "duration": 205397781,
+  "duration": 1937533020,
   "status": "passed"
 });
 formatter.match({
-  "location": "AccountCreationPageDefinition.customer_clicks_on_Submit_button()"
+  "location": "SignInPageDefinition.sign_in_to_the_GCR_Application_is_successful()"
 });
 formatter.result({
-  "duration": 6079809416,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AccountCreationPageDefinition.account_Creation_is_Successful()"
-});
-formatter.result({
-  "duration": 69853094,
+  "duration": 70328624,
   "status": "passed"
 });
 formatter.after({
-  "duration": 50827,
+  "duration": 806393218,
   "status": "passed"
 });
 });
