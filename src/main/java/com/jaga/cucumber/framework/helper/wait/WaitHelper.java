@@ -29,7 +29,7 @@ public class WaitHelper {
 	// Created by Jagatheshwaran on 8/3/2018
 	public WaitHelper(WebDriver driver) {
 		this.driver = driver;
-		logger.info("Wait H" + "{elper : " + this.driver.hashCode());
+		logger.info("Wait Helper : " + this.driver.hashCode());
 	}
 
 	// Created by Jagatheshwaran on 8/3/2018

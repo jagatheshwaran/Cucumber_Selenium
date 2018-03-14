@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<test name="FaceBookRunner">
+	<!-- <test name="FaceBookRunner">
 		<classes>
-			<class name="com.jaga.cucumber.framework.runner.FaceBookLoginRunner"/>
+			<class name="com.jaga.cucumber.framework.runner.FaceBookLoginRunner" />
 		</classes>
-	</test>	
+	</test>
+ -->	
+ <!-- <test name="SignInRunner">
+		<classes>
+			<class name="com.jaga.cucumber.framework.runner.SignInPageRunner" />
+		</classes>
+	</test> -->
+	<test name="AccountCreationRunner">
+		<classes>
+			<class name="com.jaga.cucumber.framework.runner.AccountCreationPageRunner" />
+		</classes>
+	</test>
+	
 </suite> 

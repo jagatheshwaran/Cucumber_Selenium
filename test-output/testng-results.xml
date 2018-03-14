@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30280" started-at="2018-03-05T04:42:33Z" finished-at="2018-03-05T04:43:04Z">
+  <suite name="Suite" duration-ms="39908" started-at="2018-03-14T04:12:29Z" finished-at="2018-03-14T04:13:09Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.jaga.cucumber.framework.runner.FaceBookLoginRunner@19963d8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.jaga.cucumber.framework.runner.AccountCreationPageRunner@19963d8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="FaceBookRunner" duration-ms="30280" started-at="2018-03-05T04:42:33Z" finished-at="2018-03-05T04:43:04Z">
-      <class name="com.jaga.cucumber.framework.runner.FaceBookLoginRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.jaga.cucumber.framework.runner.FaceBookLoginRunner@19963d8]" name="setUpClass" is-config="true" duration-ms="712" started-at="2018-03-05T10:12:33Z" finished-at="2018-03-05T10:12:34Z">
+    <test name="AccountCreationRunner" duration-ms="39908" started-at="2018-03-14T04:12:29Z" finished-at="2018-03-14T04:13:09Z">
+      <class name="com.jaga.cucumber.framework.runner.AccountCreationPageRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.jaga.cucumber.framework.runner.AccountCreationPageRunner@19963d8]" name="setUpClass" is-config="true" duration-ms="734" started-at="2018-03-14T09:42:29Z" finished-at="2018-03-14T09:42:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.jaga.cucumber.framework.runner.FaceBookLoginRunner@19963d8]" name="feature" duration-ms="29020" started-at="2018-03-05T10:12:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-05T10:13:03Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.jaga.cucumber.framework.runner.AccountCreationPageRunner@19963d8]" name="feature" duration-ms="38623" started-at="2018-03-14T09:42:30Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-14T09:43:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FaceBook Login]]>
+                <![CDATA[Create Account and Register into the GCR application]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.jaga.cucumber.framework.runner.FaceBookLoginRunner@19963d8]" name="tearDownClass" is-config="true" duration-ms="239" started-at="2018-03-05T10:13:03Z" finished-at="2018-03-05T10:13:04Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.jaga.cucumber.framework.runner.AccountCreationPageRunner@19963d8]" name="tearDownClass" is-config="true" duration-ms="378" started-at="2018-03-14T09:43:09Z" finished-at="2018-03-14T09:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.jaga.cucumber.framework.runner.FaceBookLoginRunner -->
-    </test> <!-- FaceBookRunner -->
+      </class> <!-- com.jaga.cucumber.framework.runner.AccountCreationPageRunner -->
+    </test> <!-- AccountCreationRunner -->
   </suite> <!-- Suite -->
 </testng-results>
