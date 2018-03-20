@@ -19,7 +19,7 @@ import com.jaga.cucumber.framework.helper.logger.LoggerHelper;
 public class DropDownHelper {
 
 	public WebDriver driver;
-	private Logger logger = LoggerHelper.getLogger(DropDownHelper.class);
+	private static Logger logger = LoggerHelper.getLogger(DropDownHelper.class);
 
 	// Created by Jagatheshwaran on 6/3/2018
 	public DropDownHelper(WebDriver driver) {

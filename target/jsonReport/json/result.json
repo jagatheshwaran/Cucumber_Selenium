@@ -1,0 +1,294 @@
+[
+  {
+    "line": 7,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5631790798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.before()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "1.Verify customer able to Sign in to the GCR application with valid credentials",
+        "description": "",
+        "id": "sign-in-to-the-gcr-application;1.verify-customer-able-to-sign-in-to-the-gcr-application-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 793226052,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6109863826,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "customer is on GCR Login Page",
+            "match": {
+              "location": "SignInPageDefinition.customer_is_on_GCR_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 359358849,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "customer enters email address as \"jaga21032018@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jaga21032018@gmail.com",
+                  "offset": 34
+                }
+              ],
+              "location": "SignInPageDefinition.customer_enters_email_address_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 248836219,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "customer enters password as \"jaga@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jaga@12345",
+                  "offset": 29
+                }
+              ],
+              "location": "SignInPageDefinition.customer_enters_password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3203858205,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "customer clicks on sign in button",
+            "match": {
+              "location": "SignInPageDefinition.customer_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108778364,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "sign in to the GCR Application is successful",
+            "match": {
+              "location": "SignInPageDefinition.sign_in_to_the_GCR_Application_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jagatheshwaran"
+          },
+          {
+            "line": 6,
+            "name": "@tag"
+          },
+          {
+            "line": 2,
+            "name": "@Created_12/03/2018"
+          },
+          {
+            "line": 9,
+            "name": "@tag1"
+          },
+          {
+            "line": 3,
+            "name": "@Modified_19/03/2018"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4171495206,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.before()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "2.Verify customer is not able to Sign in to the GCR application with invalid credentials",
+        "description": "",
+        "id": "sign-in-to-the-gcr-application;2.verify-customer-is-not-able-to-sign-in-to-the-gcr-application-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 832761115,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6504282469,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "customer is on GCR Login Page",
+            "match": {
+              "location": "SignInPageDefinition.customer_is_on_GCR_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 279578601,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "customer enters email address as \"jaga21032018@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jaga21032018@gmail.com",
+                  "offset": 34
+                }
+              ],
+              "location": "SignInPageDefinition.customer_enters_email_address_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160013059,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "customer enters password as \"jaga@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jaga@1234",
+                  "offset": 29
+                }
+              ],
+              "location": "SignInPageDefinition.customer_enters_password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1695161556,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "customer clicks on sign in button",
+            "match": {
+              "location": "SignInPageDefinition.customer_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113218936,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "sign in to the GCR Application is Unsuccessful",
+            "match": {
+              "location": "SignInPageDefinition.sign_in_to_the_GCR_Application_is_Unsuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jagatheshwaran"
+          },
+          {
+            "line": 6,
+            "name": "@tag"
+          },
+          {
+            "line": 26,
+            "name": "@tag2"
+          },
+          {
+            "line": 2,
+            "name": "@Created_12/03/2018"
+          },
+          {
+            "line": 3,
+            "name": "@Modified_19/03/2018"
+          }
+        ]
+      }
+    ],
+    "name": "Sign in to the GCR application",
+    "description": "",
+    "id": "sign-in-to-the-gcr-application",
+    "keyword": "Feature",
+    "uri": "featurefile/gcrApplication/SingInPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jagatheshwaran"
+      },
+      {
+        "line": 2,
+        "name": "@Created_12/03/2018"
+      },
+      {
+        "line": 3,
+        "name": "@Modified_19/03/2018"
+      },
+      {
+        "line": 6,
+        "name": "@tag"
+      }
+    ]
+  }
+]

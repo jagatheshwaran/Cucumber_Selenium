@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.jaga.cucumber.framework.helper.dropdown.DropDownHelper;
 import com.jaga.cucumber.framework.helper.logger.LoggerHelper;
@@ -16,6 +17,7 @@ import com.jaga.cucumber.framework.helper.wait.WaitHelper;
  * 
  * @author Jagatheshwaran
  * @since 13/3/2018
+ * @Modified - 19/03/2018
  *
  */
 public class AccountRegistrationPage {
@@ -166,8 +168,20 @@ public class AccountRegistrationPage {
 
 	public boolean verifySuccessAccountCreationMessage() {
 		new VerificationHelper();
+		String expectedSuccessMessage = "Your Account Has Been Created!";
 		logger.info("Account Creation successful...");
+		Assert.assertEquals(expectedSuccessMessage, successMessage.getText());
 		return VerificationHelper.verifyElementPresent(successMessage);
 
 	}
+
+	public boolean verifyAccountCreationErrorMessage() {
+		new VerificationHelper();
+		String expectedErrorMessage = " Your E-Mail Address already exists in our records - please log in with the e-mail address or create an account with a different address.";
+		logger.info("Account Creation Unsuccessful...");
+		Assert.assertEquals(expectedErrorMessage, errorMessage.getText());
+		return VerificationHelper.verifyElementPresent(errorMessage);
+
+	}
+
 }

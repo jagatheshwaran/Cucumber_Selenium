@@ -37,7 +37,7 @@ import cucumber.api.java.Before;
 public class TestBase {
 
 	public static WebDriver driver;
-	private Logger logger = LoggerHelper.getLogger(TestBase.class);
+	private static Logger logger = LoggerHelper.getLogger(TestBase.class);
 
 	// Created by Jagatheshwaran on 5/3/2018
 	public WebDriver getBrowserObject(BrowserType browsertype) throws Exception {
@@ -145,5 +145,15 @@ public class TestBase {
 		boolean flag = driver.findElements(locator).size() >= 1;
 		logger.info("Flag Value of Locator : " + flag);
 		return flag;
+	}
+	
+	public void enterTextbyElement(WebElement element,String text) {
+		logger.info("WebElement Value : " + element);
+		logger.info("Text Value : " + text);
+		try {
+			element.sendKeys(text);
+		} catch (NoSuchElementException e) {
+			// Ignore
+		}
 	}
 }

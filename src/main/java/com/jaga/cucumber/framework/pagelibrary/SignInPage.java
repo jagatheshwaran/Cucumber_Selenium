@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.Assert;
 
 import com.jaga.cucumber.framework.helper.logger.LoggerHelper;
 import com.jaga.cucumber.framework.helper.verification.VerificationHelper;
@@ -17,6 +17,7 @@ import com.jaga.cucumber.framework.helper.wait.WaitHelper;
  * 
  * @author Jagatheshwaran
  * @since 12/3/2018
+ * @Modified - 19/03/2018
  *
  */
 public class SignInPage {
@@ -34,7 +35,7 @@ public class SignInPage {
 	@FindBy(id = "tdb5")
 	WebElement signInButton;
 
-	@FindBy(xpath = "//*[@id='bodyContent']//*[@class='greetUser']")
+	@FindBy(xpath = "//a[@id='tdb4']/span[contains(@class,'ui-button-text')]")
 	WebElement successMessage;
 
 	@FindBy(xpath = "//*[@class='messageStackError']//td[1]")
@@ -64,9 +65,20 @@ public class SignInPage {
 
 	public boolean verifySuccessLoginMessage() {
 		new VerificationHelper();
-		logger.info("SignIn successful...");
+		String expectedSuccessMessage = "Log Off";
+		logger.info("SignIn Successful...");
+		Assert.assertEquals(expectedSuccessMessage, successMessage.getText());
 		return VerificationHelper.verifyElementPresent(successMessage);
-		
+
+	}
+
+	public boolean verifyLoginErrorMessage() {
+		new VerificationHelper();
+		String expectedErrorMessage = " Error: No match for E-Mail Address and/or Password.";
+		logger.info("SignIn UnSuccessful...");
+		Assert.assertEquals(expectedErrorMessage, errorMessage.getText());
+		return VerificationHelper.verifyElementPresent(errorMessage);
+
 	}
 
 }

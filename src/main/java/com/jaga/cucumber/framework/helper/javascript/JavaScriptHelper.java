@@ -16,7 +16,7 @@ import com.jaga.cucumber.framework.helper.logger.LoggerHelper;
 public class JavaScriptHelper {
 
 	public WebDriver driver;
-	private Logger logger = LoggerHelper.getLogger(JavaScriptHelper.class);
+	private static Logger logger = LoggerHelper.getLogger(JavaScriptHelper.class);
 
 	// Created by Jagatheshwaran on 6/3/2018
 	public JavaScriptHelper(WebDriver driver) {

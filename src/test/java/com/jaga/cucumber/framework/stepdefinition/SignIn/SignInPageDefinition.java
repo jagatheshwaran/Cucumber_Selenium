@@ -12,6 +12,7 @@ import cucumber.api.java.en.When;
  * 
  * @author Jagatheshwaran
  * @since 12/3/2018
+ * @Modified - 19/03/2018
  *
  */
 public class SignInPageDefinition {
@@ -44,6 +45,11 @@ public class SignInPageDefinition {
 	@Then("^sign in to the GCR Application is successful$")
 	public void sign_in_to_the_GCR_Application_is_successful() throws Throwable {
 		signinPage.verifySuccessLoginMessage();
+	}
+
+	@Then("^sign in to the GCR Application is Unsuccessful$")
+	public void sign_in_to_the_GCR_Application_is_Unsuccessful() throws Throwable {
+		signinPage.verifyLoginErrorMessage();
 	}
 
 }

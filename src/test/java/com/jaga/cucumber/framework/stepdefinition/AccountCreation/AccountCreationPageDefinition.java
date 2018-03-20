@@ -12,6 +12,7 @@ import cucumber.api.java.en.When;
  * 
  * @author Jagatheshwaran
  * @since 13/3/2018
+ * @Modified - 19/03/2018
  *
  */
 public class AccountCreationPageDefinition {
@@ -111,4 +112,8 @@ public class AccountCreationPageDefinition {
 		accountRegistrationPage.verifySuccessAccountCreationMessage();
 	}
 
+	@Then("^Account Creation is UnSuccessful$")
+	public void account_Creation_is_UnSuccessful() throws Throwable {
+		accountRegistrationPage.verifyAccountCreationErrorMessage();
+	}
 }
