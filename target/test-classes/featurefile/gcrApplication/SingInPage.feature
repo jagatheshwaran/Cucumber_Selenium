@@ -20,7 +20,7 @@ Then sign in to the GCR Application is successful
 Examples: 
  
 |Email|Password|
-|jaga21032018@gmail.com|jaga@12345|
+|jaga22032018@gmail.com|jaga@12345|
 
 
 @tag2
@@ -37,5 +37,5 @@ Then sign in to the GCR Application is Unsuccessful
 Examples: 
  
 |Email|Password|
-|jaga21032018@gmail.com|jaga@1234|
+|jaga22032018@gmail.com|jaga@1234|
 

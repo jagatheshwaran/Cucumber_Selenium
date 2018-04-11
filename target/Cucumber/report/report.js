@@ -79,7 +79,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "jaga21032018@gmail.com",
+        "jaga22032018@gmail.com",
         "jaga@12345"
       ],
       "line": 23,
@@ -89,7 +89,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5631790798,
+  "duration": 4283548527,
   "status": "passed"
 });
 formatter.scenario({
@@ -129,7 +129,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "customer enters email address as \"jaga21032018@gmail.com\"",
+  "name": "customer enters email address as \"jaga22032018@gmail.com\"",
   "matchedColumns": [
     0
   ],
@@ -157,20 +157,20 @@ formatter.match({
   "location": "SignInPageDefinition.customer_is_on_GCR_Login_Page()"
 });
 formatter.result({
-  "duration": 6109863826,
+  "duration": 5633778938,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "jaga21032018@gmail.com",
+      "val": "jaga22032018@gmail.com",
       "offset": 34
     }
   ],
   "location": "SignInPageDefinition.customer_enters_email_address_as(String)"
 });
 formatter.result({
-  "duration": 359358849,
+  "duration": 268231342,
   "status": "passed"
 });
 formatter.match({
@@ -183,25 +183,25 @@ formatter.match({
   "location": "SignInPageDefinition.customer_enters_password_as(String)"
 });
 formatter.result({
-  "duration": 248836219,
+  "duration": 283859847,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInPageDefinition.customer_clicks_on_sign_in_button()"
 });
 formatter.result({
-  "duration": 3203858205,
+  "duration": 2773664273,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInPageDefinition.sign_in_to_the_GCR_Application_is_successful()"
 });
 formatter.result({
-  "duration": 108778364,
+  "duration": 111680913,
   "status": "passed"
 });
 formatter.after({
-  "duration": 793226052,
+  "duration": 788656456,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -259,7 +259,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "jaga21032018@gmail.com",
+        "jaga22032018@gmail.com",
         "jaga@1234"
       ],
       "line": 40,
@@ -269,7 +269,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4171495206,
+  "duration": 4026385382,
   "status": "passed"
 });
 formatter.scenario({
@@ -309,7 +309,7 @@ formatter.step({
 });
 formatter.step({
   "line": 31,
-  "name": "customer enters email address as \"jaga21032018@gmail.com\"",
+  "name": "customer enters email address as \"jaga22032018@gmail.com\"",
   "matchedColumns": [
     0
   ],
@@ -337,20 +337,20 @@ formatter.match({
   "location": "SignInPageDefinition.customer_is_on_GCR_Login_Page()"
 });
 formatter.result({
-  "duration": 6504282469,
+  "duration": 5441509912,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "jaga21032018@gmail.com",
+      "val": "jaga22032018@gmail.com",
       "offset": 34
     }
   ],
   "location": "SignInPageDefinition.customer_enters_email_address_as(String)"
 });
 formatter.result({
-  "duration": 279578601,
+  "duration": 293409079,
   "status": "passed"
 });
 formatter.match({
@@ -363,25 +363,25 @@ formatter.match({
   "location": "SignInPageDefinition.customer_enters_password_as(String)"
 });
 formatter.result({
-  "duration": 160013059,
+  "duration": 145714380,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInPageDefinition.customer_clicks_on_sign_in_button()"
 });
 formatter.result({
-  "duration": 1695161556,
+  "duration": 1781590933,
   "status": "passed"
 });
 formatter.match({
   "location": "SignInPageDefinition.sign_in_to_the_GCR_Application_is_Unsuccessful()"
 });
 formatter.result({
-  "duration": 113218936,
+  "duration": 144093273,
   "status": "passed"
 });
 formatter.after({
-  "duration": 832761115,
+  "duration": 762858524,
   "status": "passed"
 });
 });

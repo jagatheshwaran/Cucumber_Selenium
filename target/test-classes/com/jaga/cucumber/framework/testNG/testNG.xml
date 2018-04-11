@@ -4,7 +4,7 @@
 	<test name="AccountCreationAndSignIn">
 		<classes>
 			<class name="com.jaga.cucumber.framework.runner.AccountCreationPageRunner" />
-			<class name="com.jaga.cucumber.framework.runner.SignInPageRunner" />
+		    <class name="com.jaga.cucumber.framework.runner.SignInPageRunner" />
 		</classes>
 	</test>
 </suite> 

@@ -7,4 +7,21 @@
       <class name="com.jaga.cucumber.framework.runner.SignInPageRunner"/>
     </classes>
   </test> <!-- AccountCreationAndSignIn -->
+  <test name="AccountCreationAndSignIn(failed)">
+    <classes>
+      <class name="com.jaga.cucumber.framework.runner.AccountCreationPageRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.jaga.cucumber.framework.runner.AccountCreationPageRunner -->
+      <class name="com.jaga.cucumber.framework.runner.SignInPageRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.jaga.cucumber.framework.runner.SignInPageRunner -->
+    </classes>
+  </test> <!-- AccountCreationAndSignIn(failed) -->
 </suite> <!-- Failed suite [Suite] -->

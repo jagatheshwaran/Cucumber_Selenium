@@ -33,7 +33,7 @@ Then Account Creation is Successful
 Examples: 
  
 |Gender|FName|LName|BirthDate|Email|Company|Address|Postcode|City|State|Country|Phone|Password|ConfirmPassword|
-|Male|Jaga|Waran|03/03/2018|jaga21032018@gmail.com|Software Company|Sholinganallur|600119|Chennai|TamilNadu|India|9876543210|jaga@12345|jaga@12345|
+|Male|Jaga|Waran|03/03/2018|jaga22032018@gmail.com|Software Company|Sholinganallur|600119|Chennai|TamilNadu|India|9876543210|jaga@12345|jaga@12345|
 
 
 @tag2
@@ -63,7 +63,7 @@ Then Account Creation is UnSuccessful
 Examples: 
  
 |Gender|FName|LName|BirthDate|Email|Company|Address|Postcode|City|State|Country|Phone|Password|ConfirmPassword|
-|Male|Jaga|Waran|03/03/2018|jaga21032018@gmail.com|Software Company|Sholinganallur|600119|Chennai|TamilNadu|India|9876543210|jaga@12345|jaga@12345|
+|Male|Jaga|Waran|03/03/2018|jaga22032018@gmail.com|Software Company|Sholinganallur|600119|Chennai|TamilNadu|India|9876543210|jaga@12345|jaga@12345|
 
 
       
