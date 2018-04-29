@@ -2,6 +2,12 @@ package com.jaga.cucumber.framework.configurationreader;
 
 import com.jaga.cucumber.framework.browser.BrowserType;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 6/3/2018
+ *
+ */
 public interface ConfigurationFileReader {
 
 	public String getUserName();

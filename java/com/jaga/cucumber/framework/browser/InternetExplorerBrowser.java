@@ -9,6 +9,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.jaga.cucumber.framework.utility.ResourceFetchUtility;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 5/3/2018
+ *
+ */
 public class InternetExplorerBrowser {
 
 	public Capabilities getInternetExporerCapabilities() {

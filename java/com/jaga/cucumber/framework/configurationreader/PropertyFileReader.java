@@ -7,6 +7,12 @@ import java.util.Properties;
 import com.jaga.cucumber.framework.browser.BrowserType;
 import com.jaga.cucumber.framework.utility.ResourceFetchUtility;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 6/3/2018
+ *
+ */
 public class PropertyFileReader implements ConfigurationFileReader {
 
 	public Properties properties = null;
